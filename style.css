@@ -494,7 +494,9 @@ The default position of an element can be changed by setting its position proper
 - fixed
 - sticky
 */
-
+/* *{
+    border: 2px red solid;
+} */
 body {
     background-color: #FFF;
     margin: 0 auto;
@@ -504,10 +506,12 @@ header {
     background-color: #466995;
     border-bottom: 1px solid #466995;
     position: fixed;
+    top:0;
     /*Notice that part of the “Welcome” section is now covered up by the header.
       That’s because when we changed the position of the header to fixed, we removed it from the flow of the html document.
      Let’s fix that. Set the position of the .welcome element to relative.*/
     width: 100%;
+    z-index: 10;
 }
 
 ul {
@@ -522,6 +526,8 @@ li {
     font-size: 16px;
     font-weight: 300;
     text-transform: uppercase;
+    display: inline-block;
+    width: 80px;
 }
 
 li:hover {
@@ -573,6 +579,7 @@ p {
 footer {
     background-color: #DBE9EE;
     text-align: center;
+    height: 100px;
 }
 
 .welcome {
@@ -582,21 +589,28 @@ footer {
     text-align: center;
     width: 100%;
     position: relative;
-    top: 200px;
+    top: 50px;
 }
 
 .question {
-    text-align: center;
+    /* text-align: center; */
     /* position: static; Notice that setting position to static does nothing. That’s because static simply refers to the default behavior. */
-    position: sticky;
+    /* position: relative; */
     /*One way to modify the default position of an element is by setting its position property to relative.*/
-    top: 40px;
+    /* top: 40px; */
+    text-align: center;
+    position: relative;
+    top: 30px;
+    clear: left; /*The clear property specifies how elements should behave when they bump into each other on the page. */
 }
 
 .answer {
     border: 1px solid #466995;
     margin: 20px;
+    display: inline-block;
+    width: 20%;
 }
+
 
 .answer:hover {
     background: #C0D6DF;
