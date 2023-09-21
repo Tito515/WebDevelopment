@@ -732,6 +732,8 @@ body {
     background-color: #000000;
 } */
 
+
+/* 
 .green {
     background-color: #9EB599;
 }
@@ -751,10 +753,13 @@ body {
 .italian {
     background-color: #141212;
 }
+ */
 
 
 /* Typography */
 
+
+/* 
 h1 {
     color: #41292C;
     font-family: 'Covered By Your Grace', sans-serif;
@@ -798,11 +803,13 @@ h5 {
     line-height: .2em;
     font-weight: 300;
 }
+ */
 
 
 /* Page elements */
 
-ul {
+
+/* ul {
     margin: 0 auto;
     padding: 0;
     width: 75%;
@@ -832,4 +839,17 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+} */
+
+
+/* ===================================== */
+
+
+/* Practic Demo */
+
+p {
+    width: max-content;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid;
 }
